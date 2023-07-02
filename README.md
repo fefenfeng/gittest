@@ -21,7 +21,7 @@ test git and test pytorch and tensorflow2.0 on GPU
 
 ![截图1](https://drive.google.com/file/d/1I24irUNzOUhbE398aVxye5Ut5LWS66Dw/view?usp=sharing)
 
-![](C:\Users\FENG\Pictures\Screenshots\屏幕截图_20230217_133009.png)
+![](.\figure\屏幕截图_20230217_133009.png)
 
 ## 超链接
 
