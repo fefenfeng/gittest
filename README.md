@@ -19,7 +19,7 @@ test git and test pytorch and tensorflow2.0 on GPU
 
 ---
 
-![截图1](https://drive.google.com/file/d/1I24irUNzOUhbE398aVxye5Ut5LWS66Dw/view?usp=sharing)
+![截图1](https://github.com/fefenfeng/gittest/blob/master/figure/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE_20230217_133009.png?raw=true)
 
 ![](.\figure\屏幕截图_20230217_133009.png)
 
