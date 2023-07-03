@@ -1,18 +1,18 @@
-def check_libraries(libs):
-    for lib in libs:
-        try:
-            __import__(lib)
-            print(f"{lib} 已安装")
-        except ModuleNotFoundError:
-            print(f"{lib} 未安装")
-
-
-libraries = ['numpy', 'matplotlib', 'pandas', 'sklearn', 'pytorch', 'opencv', 'tensorflow']
-check_libraries(libraries)
-
-import torch
-
-print(torch.__version__)
+# def check_libraries(libs):
+#     for lib in libs:
+#         try:
+#             __import__(lib)
+#             print(f"{lib} 已安装")
+#         except ModuleNotFoundError:
+#             print(f"{lib} 未安装")
+#
+#
+# libraries = ['numpy', 'matplotlib', 'pandas', 'sklearn', 'pytorch', 'opencv', 'tensorflow']
+# check_libraries(libraries)
+#
+# import torch
+#
+# print(torch.__version__)
 
 # import tensorflow as tf
 # import os
@@ -34,3 +34,13 @@ print(torch.__version__)
 # print(tf.__version__)
 # print('GPU:', tf.config.list_physical_devices('GPU'))
 # print(tf.test.is_gpu_available())
+import torch
+flag = torch.cuda.is_available()
+print(flag)
+
+ngpu= 1
+# Decide which device we want to run on
+device = torch.device("cuda:0" if (torch.cuda.is_available() and ngpu > 0) else "cpu")
+print(device)
+print(torch.cuda.get_device_name(0))
+print(torch.rand(3,3).cuda())
